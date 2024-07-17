@@ -1,4 +1,4 @@
-import * as sql from '../models/usuarios.model.js'
+import * as sql from '../models/trabajadores.model.js'
 import { jwtSign } from '../../util/auth/jwt.js'
 
 
@@ -8,7 +8,7 @@ export const register = (req, res) => sql.register(req.body)
       res.status(500).json({ status: false, code: 500, message: result })
       return
     }
-    res.status(201).json({ status: true, code: 201, message: 'Usuario creado con éxito' })
+    res.status(201).json({ status: true, code: 201, message: 'Cliente creado con éxito' })
     })
   .catch((error) => res.status(500).json({ status: false, code: 500, message: error }))
 

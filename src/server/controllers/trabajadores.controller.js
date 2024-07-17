@@ -1,4 +1,4 @@
-import * as sql from '../models/personal.model.js'
+import * as sql from '../models/trabajadores.model.js'
 
 export const findAll = (req, res) => sql.findAll()
   .then((result) => res.status(200).json({ status: true, code: 200, message: result }))

@@ -10,7 +10,7 @@ INSERT INTO peliculas (id, nombre, precio, stock) VALUES
   (DEFAULT, 'South Park', 4500, 35 ),
   (DEFAULT, 'Gigantes de Acero', 1870, 25 );
 
-INSERT INTO personal (id, nombre, rol, salario) VALUES
+INSERT INTO trabajadores (id, nombre, rol, salario) VALUES
   (DEFAULT, 'Jose Pablo', 'administrador' , 5000),
   (DEFAULT, 'Luis Cano', 'cajero' , 3500),
   (DEFAULT, 'Alexander Castro', 'administrador' , 2200),
@@ -21,7 +21,7 @@ INSERT INTO personal (id, nombre, rol, salario) VALUES
   (DEFAULT, 'Alejandro Peña', 'seguridad' , 3000),
   (DEFAULT, 'Marko Barria', 'seguridad' , 3000);
 
-INSERT INTO usuarios (id, email, pass) VALUES 
+INSERT INTO clientes (id, email, pass) VALUES 
   (DEFAULT, 'pgp@moisesmavo','22122003');
 
 SELECT * FROM peliculas;
