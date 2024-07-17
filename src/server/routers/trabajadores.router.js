@@ -3,10 +3,10 @@ import * as trabajadoresController from '../controllers/trabajadores.controller.
 
 const router = Router()
 
-router.get('/trabajadores', personalController.findAll)
-router.get('/trabajadores/:id', personalController.findById)
-router.post('/trabajadores', personalController.create)
-router.put('/trabajadores/id', personalController.updateById)
-router.delete('/trabajadores/id', personalController.deleteById)
+router.get('/trabajadores', trabajadoresController.findAll)
+router.get('/trabajadores/:id', trabajadoresController.findById)
+router.post('/trabajadores', trabajadoresController.create)
+router.put('/trabajadores/id', trabajadoresController.updateById)
+router.delete('/trabajadores/id', trabajadoresController.deleteById)
 
 export default router

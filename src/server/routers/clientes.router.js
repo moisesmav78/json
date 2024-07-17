@@ -3,8 +3,8 @@ import * as clientesController from '../controllers/clientes.controller.js'
 
 const router = Router()
 
-router.post('/register', usuariosController.register)
-router.post('/login', usuariosController.login)
+router.post('/register', clientesController.register)
+router.post('/login', clientesController.login)
 
 export default router
 

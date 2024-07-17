@@ -10,20 +10,20 @@ INSERT INTO peliculas (id, nombre, precio, stock) VALUES
   (DEFAULT, 'South Park', 4500, 35 ),
   (DEFAULT, 'Gigantes de Acero', 1870, 25 );
 
-INSERT INTO trabajadores (id, nombre, rol, salario) VALUES
-  (DEFAULT, 'Jose Pablo', 'administrador' , 5000),
-  (DEFAULT, 'Luis Cano', 'cajero' , 3500),
-  (DEFAULT, 'Alexander Castro', 'administrador' , 2200),
-  (DEFAULT, 'Tony Stark', 'conserje' , 7000),
-  (DEFAULT, 'Maria Jose', 'cajera' , 6500),
-  (DEFAULT, 'Moises Mavo', 'gerente' , 10000),
-  (DEFAULT, 'Roxi Torres', 'supervisora' , 4000),
-  (DEFAULT, 'Alejandro Peña', 'seguridad' , 3000),
-  (DEFAULT, 'Marko Barria', 'seguridad' , 3000);
+  INSERT INTO trabajadores (id, nombre, rol, salario) VALUES
+    (DEFAULT, 'Jose Pablo', 'administrador' , 5000),
+    (DEFAULT, 'Luis Cano', 'cajero' , 3500),
+    (DEFAULT, 'Alexander Castro', 'administrador' , 2200),
+    (DEFAULT, 'Tony Stark', 'conserje' , 7000),
+    (DEFAULT, 'Maria Jose', 'cajera' , 6500),
+    (DEFAULT, 'Moises Mavo', 'gerente' , 10000),
+    (DEFAULT, 'Roxi Torres', 'supervisora' , 4000),
+    (DEFAULT, 'Alejandro Peña', 'seguridad' , 3000),
+    (DEFAULT, 'Marko Barria', 'seguridad' , 3000);
 
 INSERT INTO clientes (id, email, pass) VALUES 
   (DEFAULT, 'pgp@moisesmavo','22122003');
 
 SELECT * FROM peliculas;
-SELECT * FROM personal;
-select * from usuarios;
+SELECT * FROM trabajadores;
+select * from clientes;

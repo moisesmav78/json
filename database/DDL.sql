@@ -5,7 +5,7 @@
 CREATE DATABASE peliculas;
 
 \c peliculas;
-CREATE table TRABAJADORES(
+CREATE table clientes(
   id        SERIAL,
   email     VARCHAR(50)   NOT NULL UNIQUE,
   pass      VARCHAR(50)   NOT NULL,
@@ -19,7 +19,7 @@ CREATE TABLE peliculas (
   stock     INT           NOT NULL CHECK (stock >= 0)
 );
 
-CREATE TABLE clientes (
+CREATE TABLE TRABAJADORES (
   id        SERIAL,
   nombre    VARCHAR(50)   NOT NUlL,
   rol       VARCHAR(50)   NOT NUlL,
